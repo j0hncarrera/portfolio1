@@ -1,0 +1,147 @@
+<html>
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width"> 
+  <title>Portfolio</title> 
+  <link href="style.css" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/21e9ec05b8.js" crossorigin="anonymous"></script>
+ </head> 
+ <body> 
+  <main class="main"> 
+   <nav class="navBar"> 
+    <h1>Look at My Portfolio!!</h1> 
+    <div class="navigationMenu"> <a href="#aboutMe">About Me</a> <a href="#projects">Projects</a> <a href="#skills">Skills</a> <a href="#contactForm">Contact Me</a> 
+     <div> 
+     </div>
+    </div>
+   </nav> 
+   <section class="heroSection"> 
+    <img class="profileImage" src="C:\Users\John Hanest\Downloads\image1.jpg"> 
+    <div class="herosectionDetails"> 
+     <h1>John Hanest Carrera</h1> 
+     <h3>Web Developer</h3> 
+    </div> 
+   </section> 
+   
+   <section class="aboutMe" id="aboutMe"> 
+    <h1>About Me!!!.</h1> 
+    <p>Hello! Everyone. My name is John Hanest Carrera,i'm currently 3rd year student taking of Bachelor of Science in Information Technology at Phinma University Pangasinan.I am 20 years old. I live in Sta.Barbara Pangasinan.And I believe in <br>"Technology is the canvas, and code is the brushstroke that brings innovation to life."</p> 
+   </section>
+
+   <section class="skillsAndProjects"> 
+   <div class="projects" id="projects"> 
+     <h1 class="cardHeading">Projects</h1> 
+     <div class="projectContainer"> 
+      <img src="https://www.svgrepo.com/show/226114/css.svg"> 
+      <div class="projectDescription"> 
+       <h4>Portfolio</h4> 
+       <p>My first Project is my Portfolio</p> 
+      </div> 
+     </div> 
+     <div class="projectContainer"> 
+      <img src="https://www.svgrepo.com/show/226114/css.svg"> 
+      <div class="projectDescription"> 
+       <h4>Food Menu</h4> 
+       <p>Choose Your Favorite Meal!!</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="skills" id="skills"> 
+        <h1 class="cardHeading">Skills</h1> 
+        <img title="HTML" src="https://www.svgrepo.com/show/119716/html.svg"> 
+        <img title="CSS" src="https://www.svgrepo.com/show/226114/css.svg"> 
+       </div>
+   </section> 
+   <div class ="container">
+    <div class="card">
+        <div class="imgBx">
+            <a href="#">
+                <img src="C:\Users\John Hanest\Downloads\img5.png">
+            </a>
+            <h2>Web Design</h2>
+            <p><br>Web design is one of the things I focus my time on so that I can hone it even more.</p>
+        </div>
+    </div>
+   </div>
+   <div class ="container">
+    <div class="card">
+        <div class="imgBx">
+            <a href="#">
+                <img src="C:\Users\John Hanest\Downloads\img6.jpg">
+            </a>
+            <h2>Web Development</h2>
+            <p><br>Just like Web Design, Web Development is also one that I am focusing on so that I can improve even more in this field.</p>
+        </div>
+    </div>
+   </div>
+   <div class ="container">
+    <div class="card">
+        <div class="imgBx">
+            <a href="#">
+                <img src="C:\Users\John Hanest\Downloads\img7.jpg">
+            </a>
+            <h2>Photography</h2>
+            <p><br>Photography is one of my skills and also my hobby.</p>
+        </div>
+    </div>
+   </div>
+   <section class="contactForm" id="contactForm">
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hdiscipulo@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09089468909</p>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/hanest.discipulo?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@nothi1ngzzzzz?_t=8et1wg4udXu&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://youtube.com/@johnhanestvlog8690"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/hanest_ty?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required="">
+                <input type="text" name="Email" placeholder="Your Email" required="">
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+<div class="copyright"> 
+    <p>Copyright © John Hanest. Portfolio</p>
+</div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classlist.remove("active-link");
+}
+for(tabcontent of tabcontents){
+tabcontent.classlist.remove("active-tab");
+}
+event.currentTarget.classlist.add("active-link");
+document.getElementById(tabname).classList.add("active-tab")
+}
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuWyBnlFegHZWhfV8k9T1lAvfrDZSzKrvVoM4mfHSTsQVKtZx2EBbJ1SMwxHk1BSm8Xg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</section>
+  </main> 
+ </body>
+</html>
